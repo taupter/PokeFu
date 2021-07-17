@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>HomeForm.ui.qml</file>
+        <file>PokedexForm.ui.qml</file>
+        <file>ExchangeCalculatorForm.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>MyPokeballForm.ui.qml</file>
+        <file>images/International_Pokémon_logo.svg</file>
+    </qresource>
+</RCC>

@@ -20,9 +20,9 @@ ApplicationWindow {
         property alias width: window.width
         property alias height: window.height
 
-        property int    pokemons: 0
-//        property string birthdate: ""
-//        property bool   autologin: false
+        property int pokemons: 0
+        property var dataBase
+        property var m_pokenon
     }
 
 

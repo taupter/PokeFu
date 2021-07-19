@@ -1,38 +1,40 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.0
 
 Page {
+    id: pokedexPage
     width: 600
     height: 400
-    title: "Pokedex"
-
+    property alias pokemonSearchButton: pokemonSearchButton
+    title: qsTr("Pokedex")
+    anchors.fill: parent
 
     Label {
         text: qsTr("This is the Pokedex.")
         anchors.centerIn: parent
     }
 
-    TextInput {
-        id: textInput
-        x: 214
-        y: 246
-        width: 80
-        height: 20
-        text: qsTr("Text Input")
-        font.pixelSize: 12
-    }
+    RowLayout {
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.topMargin: 20
+        anchors.rightMargin: 42
+        anchors.leftMargin: 40
 
-    Button {
-        id: button
-        x: 335
-        y: 246
-        text: qsTr("Button")
-    }
+        TextField {
+            id: pokemonSearchField
+            Layout.fillWidth: true
+            Layout.preferredHeight: 47
+            Layout.preferredWidth: 362
+            placeholderText: qsTr("Pokemon name or ID")
+        }
 
-    ToolBar {
-        id: toolBar
-        x: 108
-        y: 59
-        width: 360
+        Button {
+            id: pokemonSearchButton
+            text: "Search"
+            display: AbstractButton.TextBesideIcon
+        }
     }
 }

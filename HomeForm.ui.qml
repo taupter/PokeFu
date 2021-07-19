@@ -1,36 +1,51 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.0
 
 Page {
-    id: page
+    id: homePage
     width: 600
     height: 400
     title: qsTr("Welcome to PokeFu!")
-
-
+    anchors.fill: parent
 
     Rectangle {
         id: rectangle
         color: "#ffff00"
         anchors.fill: parent
+        anchors.rightMargin: 0
+        anchors.bottomMargin: 0
+        anchors.leftMargin: 0
+        anchors.topMargin: 0
     }
 
-    Label {
-        text: qsTr("Welcome to PokeFu!")
-        anchors.top: parent.top
-        anchors.topMargin: 40
-        anchors.verticalCenterOffset: -150
-        anchors.horizontalCenterOffset: 1
-        anchors.centerIn: parent
-    }
-
-
-
-    Image {
-        id: international_Pokmon_logo
+    ColumnLayout {
         anchors.fill: parent
-        source: "images/International_Pokémon_logo.svg"
-        fillMode: Image.PreserveAspectFit
-    }
+        anchors.rightMargin: 0
+        anchors.bottomMargin: 0
+        anchors.leftMargin: 0
+        anchors.topMargin: 0
 
+        Item {
+            id: topSpacer
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+        }
+
+        Image {
+            id: pokemonLogo
+            source: "images/International_Pokémon_logo.svg"
+            Layout.rightMargin: 20
+            Layout.leftMargin: 20
+            Layout.fillHeight: true
+            Layout.fillWidth: true
+            fillMode: Image.PreserveAspectFit
+        }
+
+        Item {
+            id: bottomSpacer
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+        }
+    }
 }

@@ -4,11 +4,12 @@ import QtQuick.Controls 2.15
 Page {
     width: 600
     height: 400
-    title: "Exchange calculator"
+    title: qsTr("Exchange calculator")
+    anchors.fill: parent
 
 
     Label {
-        text: qsTr("You are on Page 2.")
+        text: qsTr("This is the exchange calculator.")
         anchors.centerIn: parent
     }
 }

@@ -83,7 +83,7 @@ ApplicationWindow {
                 text: qsTr("My pokeball")
                 width: parent.width
                 onClicked: {
-                    stackView.push("MyPokeballForm.ui.qml")
+                    stackView.push("MyPokeball.qml")
                     drawer.close()
                 }
             }
@@ -91,7 +91,7 @@ ApplicationWindow {
                 text: qsTr("Exchange calculator")
                 width: parent.width
                 onClicked: {
-                    stackView.push("ExchangeCalculatorForm.ui.qml")
+                    stackView.push("ExchangeCalculator.qml")
                     drawer.close()
                 }
             }
@@ -99,7 +99,15 @@ ApplicationWindow {
                 text: qsTr("Pokedex")
                 width: parent.width
                 onClicked: {
-                    stackView.push("PokedexForm.ui.qml")
+                    stackView.push("Pokedex.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate {
+                text: qsTr("About")
+                width: parent.width
+                onClicked: {
+                    stackView.push("About.qml")
                     drawer.close()
                 }
             }
@@ -108,7 +116,7 @@ ApplicationWindow {
 
     StackView {
         id: stackView
-        initialItem: "HomeForm.ui.qml"
+        initialItem: "Home.qml"
         anchors.fill: parent
     }
 

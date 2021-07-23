@@ -34,7 +34,7 @@ Page {
 
         Image {
             id: pokemonLogo
-            source: "images/International_Pokémon_logo.svg"
+            source: "images/pokemon-logo.svg"
             Layout.rightMargin: 20
             Layout.leftMargin: 20
             Layout.fillHeight: true

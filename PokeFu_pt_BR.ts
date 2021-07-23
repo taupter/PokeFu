@@ -92,6 +92,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="main.qml" line="91"/>
+        <source>Exchange calculator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="main.qml" line="99"/>
         <source>Pokedex</source>
         <translation type="unfinished"></translation>
@@ -99,11 +104,6 @@
     <message>
         <location filename="main.qml" line="107"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="main.qml" line="91"/>
-        <source>Exchange calculator</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

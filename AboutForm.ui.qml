@@ -17,7 +17,7 @@ Page {
         anchors.right: parent.right
         anchors.top: parent.top
         anchors.bottom: parent.bottom
-        source: "images/Poké_Ball_icon.svg"
+        source: "images/pokeball-icon.svg"
         antialiasing: false
         anchors.bottomMargin: 0
         anchors.rightMargin: 0

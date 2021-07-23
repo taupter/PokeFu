@@ -6,13 +6,13 @@
         <file>ExchangeCalculatorForm.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
         <file>MyPokeballForm.ui.qml</file>
-        <file>images/International_Pokémon_logo.svg</file>
+        <file>images/pokemon-logo.svg</file>
         <file>About.qml</file>
         <file>AboutForm.ui.qml</file>
         <file>ScratchPad.qml</file>
         <file>ScratchPadForm.ui.qml</file>
         <file>Pokedex.qml</file>
-        <file>images/Poké_Ball_icon.svg</file>
+        <file>images/pokeball-icon.svg</file>
         <file>ExchangeCalculator.qml</file>
         <file>Home.qml</file>
         <file>MyPokeball.qml</file>

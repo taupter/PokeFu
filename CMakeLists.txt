@@ -36,9 +36,11 @@ set(PROJECT_SOURCES
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+    set(APP_ICON_RESOURCE_WINDOWS "${CMAKE_CURRENT_SOURCE_DIR}/windows/PokeFu.rc")
     qt_add_executable(PokeFu
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        ${APP_ICON_RESOURCE_WINDOWS}
     )
 
     qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
@@ -47,6 +49,13 @@ else()
         add_library(PokeFu SHARED
             ${PROJECT_SOURCES}
         )
+    elseif(WIN32)
+        set(APP_ICON_RESOURCE_WINDOWS "${CMAKE_CURRENT_SOURCE_DIR}/windows/PokeFu.rc")
+        add_executable(PokeFu
+            ${PROJECT_SOURCES}
+            ${APP_ICON_RESOURCE_WINDOWS}
+        )
+
     else()
         add_executable(PokeFu
           ${PROJECT_SOURCES}
